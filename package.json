@@ -1,0 +1,28 @@
+{
+  "name": "test-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "all:ui": "playwright test --grep \"@ui\"",
+    "report": "playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phucnguyen2110/Test-Automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phucnguyen2110/Test-Automation/issues"
+  },
+  "homepage": "https://github.com/phucnguyen2110/Test-Automation#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.0",
+    "allure-playwright": "^2.15.1"
+  }
+}
