@@ -32,6 +32,6 @@
 ## Allure
 - Here's another type of report you can use provided by Allure
 - Install: https://www.npmjs.com/package/allure-playwright
-- Run:
+- Run below commands after running test cases successfully:
     1. allure generate allure-results -o allure-report --clean
     2. allure open allure-report

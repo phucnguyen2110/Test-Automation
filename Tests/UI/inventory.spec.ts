@@ -76,6 +76,7 @@ test.describe(`${PURCHASE.Inventory} @ui`, () => {
         });
 
         await test.step(`Verify the results of filter Name (A to Z)`, async () => {
+            await MethodsConfig.delay(2000);
             screenshotPath = [`inventoryContainer.png`];
             const inventoryContainer = page.locator(`data-test=${DATA_TEST_IDS.InventoryContainer}`);
             await inventoryPage.verifyMatchScreenshot(screenshotPath, inventoryContainer);
@@ -92,6 +93,7 @@ test.describe(`${PURCHASE.Inventory} @ui`, () => {
         });
 
         await test.step(`Verify the results of filter Name (Z to A)`, async () => {
+            await MethodsConfig.delay(3000);
             screenshotPath = [`sortZA.png`];
             const inventoryContainer = page.locator(`data-test=${DATA_TEST_IDS.InventoryContainer}`);
             await inventoryPage.verifyMatchScreenshot(screenshotPath, inventoryContainer);
@@ -108,6 +110,7 @@ test.describe(`${PURCHASE.Inventory} @ui`, () => {
         });
 
         await test.step(`Verify the results of filter Price (low to high)`, async () => {
+            await MethodsConfig.delay(2000);
             screenshotPath = [`sortLowHigh.png`];
             const inventoryContainer = page.locator(`data-test=${DATA_TEST_IDS.InventoryContainer}`);
             await inventoryPage.verifyMatchScreenshot(screenshotPath, inventoryContainer);
@@ -124,6 +127,7 @@ test.describe(`${PURCHASE.Inventory} @ui`, () => {
         });
 
         await test.step(`Verify the results of filter Price (high to low)`, async () => {
+            await MethodsConfig.delay(2000);
             screenshotPath = [`sortHighLow.png`];
             const inventoryContainer = page.locator(`data-test=${DATA_TEST_IDS.InventoryContainer}`);
             await inventoryPage.verifyMatchScreenshot(screenshotPath, inventoryContainer);
